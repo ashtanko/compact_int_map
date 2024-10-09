@@ -2,6 +2,17 @@
 
 `CompactIntMap` is a lightweight implementation of an integer-keyed map that efficiently stores key-value pairs using two parallel lists for keys and values. It supports operations such as adding, updating, retrieving, and removing mappings, along with utility methods to get the size of the map, clear it, and clone its contents.
 
+<p align="center">
+  <a href="https://github.com/ashtanko/compact_int_map/actions/workflows/coverage.yml"><img alt="Coverage" src="https://github.com/ashtanko/compact_int_map/actions/workflows/coverage.yml/badge.svg"/></a>
+  <a href="https://github.com/ashtanko/compact_int_map/actions/workflows/build.yml"><img alt="Dart CI" src="https://github.com/ashtanko/compact_int_map/actions/workflows/build.yml/badge.svg"/></a>
+  <a href="https://pub.dev/packages/compact_int_map"><img alt="pub.dev" src="https://img.shields.io/pub/v/compact_int_map?label=compact_int_map"/></a>
+  <a href="https://www.codefactor.io/repository/github/ashtanko/compact_int_map"><img alt="CodeFactor" src="https://www.codefactor.io/repository/github/ashtanko/compact_int_map/badge"/></a>
+  <a href="https://app.codacy.com/gh/ashtanko/compact_int_map/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/b563f5245cd145d48d3f3be4ce2d68e0"/></a>
+  <a href="https://codecov.io/github/ashtanko/compact_int_map"><img alt="Codecov" src="https://codecov.io/github/ashtanko/compact_int_map/graph/badge.svg?token=v5RL0WTPi8"/></a>
+  <a href="https://app.codacy.com/gh/ashtanko/compact_int_map/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Coverage/b563f5245cd145d48d3f3be4ce2d68e0"/></a>
+  <a href="https://github.com/ashtanko/compact_int_map/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
+</p><br>
+
 ### Features
 - Add Key-Value Pairs: Use put(key, value) to store values associated with integer keys.
 - Retrieve Values: Use get(key) to retrieve values; returns null if the key is not present.
@@ -12,15 +23,12 @@
 
 ## Getting started
 
-To use `lru_cache` in your Dart project, add it to your `pubspec.yaml`:
+To use `compact_int_map` in your Dart project, add it to your `pubspec.yaml`:
 
 ```dart
 dependencies:
   compact_int_map: ^latest_version
 ```
-
-## Usage
-Here's an example of how to use the LruCache class:
 
 ```dart
 import 'package:compact_int_map/compact_int_map.dart';
