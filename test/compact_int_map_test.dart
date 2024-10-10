@@ -145,5 +145,44 @@ void main() {
       map.put(1, 100);
       expect(() => map.valueAt(1), throwsRangeError);
     });
+
+    test('withCapacity creates map with specified capacity', () {
+      final map = CompactIntMap.withCapacity(10);
+      expect(map.size(), equals(0));
+      expect(map.keys.isEmpty, isTrue);
+    });
+
+    test('toString returns correct string representation', () {
+      final map = CompactIntMap();
+      map.put(1, 100);
+      map.put(2, 200);
+      expect(map.toString(), equals('{1=100, 2=200}'));
+      map.put(3, 300);
+      expect(map.toString(), equals('{1=100, 2=200, 3=300}'));
+    });
+
+    test('operator [] returns value for a valid key', () {
+      final map = CompactIntMap();
+      map.put(1, 100);
+      expect(map[1], equals(100));
+      expect(map[2], isNull);
+    });
+
+    test('operator []= assigns value to a key', () {
+      final map = CompactIntMap();
+      map[1] = 100;
+      expect(map[1], equals(100));
+      map[1] = 200;
+      expect(map[1], equals(200));
+    });
+
+    test('keys returns an iterable of keys', () {
+      final map = CompactIntMap();
+      map.put(1, 100);
+      map.put(2, 200);
+      map.put(3, 300);
+
+      expect(map.keys.toList(), equals([1, 2, 3]));
+    });
   });
 }
