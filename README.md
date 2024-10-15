@@ -1,6 +1,6 @@
 ## CompactIntMap
 
-`CompactIntMap` is a lightweight implementation of an integer-keyed map that efficiently stores key-value pairs using two parallel lists for keys and values. It supports operations such as adding, updating, retrieving, and removing mappings, along with utility methods to get the size of the map, clear it, and clone its contents.
+`CompactIntMap` lightweight integer-keyed map implementation that uses parallel lists for efficient storage of key-value pairs. It supports adding, updating, retrieving, and removing mappings, along with utility methods for size, clearing, and cloning.
 
 <p align="center">
   <a href="https://github.com/ashtanko/compact_int_map/actions/workflows/coverage.yml"><img alt="Coverage" src="https://github.com/ashtanko/compact_int_map/actions/workflows/coverage.yml/badge.svg"/></a>

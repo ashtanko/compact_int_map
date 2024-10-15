@@ -7,6 +7,7 @@ class CompactIntMap with MapMixin<int, int> {
   final List<int> _keys;
   final List<int> _values;
   int _size;
+  int _currentIndex = -1;
 
   /// Creates an empty [CompactIntMap].
   CompactIntMap() : this._internal(0);
@@ -161,8 +162,6 @@ class CompactIntMap with MapMixin<int, int> {
     }
     return MapEntry(_keys[_currentIndex], _values[_currentIndex]);
   }
-
-  int _currentIndex = -1;
 
   @override
   int? operator [](Object? key) {
